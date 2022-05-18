@@ -14,6 +14,8 @@
 	<name>cursomc</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
@@ -40,7 +42,16 @@
 		<dependency>
 		 	<groupId>org.springframework.boot</groupId>
 		 	<artifactId>spring-boot-devtools</artifactId>
-		</dependency> 
+		</dependency>
+		<dependency>
+    		<groupId>javax.validation</groupId>
+    		<artifactId>validation-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>6.1.5.Final</version>
+		</dependency>			
 	</dependencies>
 
 	<build>
